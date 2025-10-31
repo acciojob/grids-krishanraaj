@@ -1,2 +1,24 @@
 
 /* Your CSS Code here. */
+.container {
+  max-width: 600px;
+  border: 5px solid rgb(4, 255, 4);
+  background-color: rgb(41, 0, 0);
+}
+
+.row {
+  border: 5px solid rgb(255, 188, 188);
+  height: 200px;
+}
+
+.col {
+  border: 2px dotted rgb(38, 38, 43);
+}
+
+/* Specific column colors */
+.row1-col1 { background-color: teal; }
+.row1-col2 { background-color: thistle; }
+.row2-col1 { background-color: tomato; }
+.row2-col2 { background-color: turquoise; }
+.row3-col1 { background-color: violet; }
+.row3-col2 { background-color: yellowgreen; }
