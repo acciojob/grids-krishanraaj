@@ -1,25 +1,69 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
 .container {
-  max-width: 600px;
-  border: 5px solid rgb(4, 255, 4);
-  background-color: rgb(41, 0, 0);
+  border: 3px solid limegreen;
+  padding: 10px;
+  width: 90%;
+  background-color: pink;
 }
 
 .row {
-  border: 5px solid rgb(255, 188, 188);
-  height: 200px;
-  margin-bottom: 20px; /* add spacing between rows if desired */
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+  border: 2px solid pink;
 }
 
 .col {
-  border: 2px dotted rgb(38, 38, 43);
+  flex: 1;
+  border: 1px dotted black;
+  margin: 5px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
 }
 
-/* Specific background colours */
-.row1-col1 { background-color: teal; }
-.row1-col2 { background-color: thistle; }
-.row2-col1 { background-color: tomato; }
-.row2-col2 { background-color: turquoise; }
-.row3-col1 { background-color: violet; }
-.row3-col2 { background-color: yellowgreen; }
+/* Row 1 colors */
+.row1 .col1 {
+  background-color: teal;
+}
+.row1 .col2 {
+  background-color: thistle;
+}
 
-/* If you want the empty space in row2 to be visually blank, no style needed for offset */
+/* Row 2 colors */
+.row2 {
+  background-color: rgb(60, 0, 0);
+}
+.row2 .col1 {
+  background-color: tomato;
+}
+.row2 .col2 {
+  background-color: turquoise;
+}
+
+/* Row 3 colors */
+.row3 {
+  background-color: rgb(60, 0, 0);
+}
+.row3 .col1 {
+  background-color: violet;
+}
+.row3 .col2 {
+  background-color: yellowgreen;
+}
