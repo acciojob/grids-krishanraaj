@@ -3,25 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Grid Layout Example</title>
+  <title>Bootstrap Grid Solution</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
+
+  <div class="container border border-success p-3">
+    <!-- Row 1 -->
     <div class="row row1">
-      <div class="col col1">Row1 col1</div>
-      <div class="col col2">Row1 col2</div>
+      <div class="col-sm-6 col-md-4 r1c1 bg-primary text-center text-white p-3">Row1 Col1</div>
+      <div class="col-sm-6 col-md-8 r1c2 bg-warning text-center p-3">Row1 Col2</div>
     </div>
 
-    <div class="row row2">
-      <div class="col col1">Row2 col1</div>
-      <div class="col col2">Row2 col2</div>
+    <!-- Row 2 -->
+    <div class="row row2 justify-content-between">
+      <div class="col-sm-6 col-md-4 offset-md-2 r2c1 bg-danger text-center text-white p-3">Row2 Col1</div>
+      <div class="col-sm-6 col-md-4 r2c2 bg-info text-center p-3">Row2 Col2</div>
     </div>
 
-    <div class="row row3">
-      <div class="col col1">Row3 col1</div>
-      <div class="col col2">Row3 col2</div>
+    <!-- Row 3 -->
+    <div class="row row3 justify-content-center">
+      <div class="col-sm-6 col-md-4 r3c1 bg-success text-center text-white p-3">Row3 Col1</div>
+      <div class="col-sm-6 col-md-4 r3c2 bg-secondary text-center text-white p-3">Row3 Col2</div>
     </div>
   </div>
+
 </body>
 </html>
